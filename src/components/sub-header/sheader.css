@@ -1,0 +1,27 @@
+.con-sheader{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+    box-shadow: 0 2rem 3rem rgba(132,139,200,0.18);;
+    position: relative;
+}
+.con-sheader .lines{
+    width: 100vw;
+    display: flex;
+
+}
+
+.box-sheader{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.box-sheader a{
+    text-decoration: none;
+    padding: 15px 0;
+    font-weight: 500;
+    color: rgb(125, 114, 114);
+}

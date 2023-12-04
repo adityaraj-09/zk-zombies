@@ -1,0 +1,21 @@
+.con-header{
+    background-color: #171d41;
+    display: flex;
+   
+    padding: 20px 120px;
+    justify-content: space-between;
+}
+.title-box h3{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: white;
+}
+.link-box{
+    display: flex;
+    gap: 25px;
+}
+.link-box a{
+    color: white;
+    text-decoration: none;
+}
