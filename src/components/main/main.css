@@ -8,34 +8,3 @@
     flex-direction: column;
 
 }
-.box-btns{
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-}
-.box-btns h3{
-    margin: 0;
-    padding: 0;
-}
-.box-btns select{
-    width: 220px;
-    color: black;background-color: white;
-    border: 1px solid rgb(199, 191, 191);
-    border-radius:5px;
-    padding: 5px;
-    --webkit-apperance:button;
-    font-size: medium;
-}
-select:focus{
-    outline-color: blue;
-}
-.btns-opers{
-    width: 220px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    color: white;
-    background-color: rgb(115, 0, 255);
-}

@@ -1,19 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/header/header';
-import Sheader from './components/sub-header/sheader';
-import Main from './components/main/main';
+
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Homepage from './pages/homepage';
 
 function App() {
   return (
-    <>
-    <div className="app">
-
-      <Header/>
-      <Sheader/>
-      <Main/>
-    </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/'>
+          <Route index element={<Navigate to={"playground"}/>}/>
+        <Route path=":state" element={<Homepage m="abc"/>}/>
+        </Route>
+      </Routes> 
+    </BrowserRouter>
   );
 }
 
