@@ -7,7 +7,7 @@ import 'codemirror/theme/dracula.css';
 import 'codemirror/mode/javascript/javascript';
 import CodeMirror from 'codemirror';
 
-const CodeEditor = ({ code, setCode,theme }) => {
+const CodeEditor = ({ code, setCode,theme,height }) => {
   const codeMirrorRef = useRef(null);
   const editorRef = useRef(null);
 
@@ -30,7 +30,7 @@ const CodeEditor = ({ code, setCode,theme }) => {
 
     // Set focus and cursor position to the end
     editor.setCursor(editor.lineCount(), 0);
-    editor.setSize('100%', '300px');
+    editor.setSize('100%', height);
     // Cleanup CodeMirror instance on component unmount
     return () => {
       editor.toTextArea();
