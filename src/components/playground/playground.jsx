@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import CodeEditor from './codeEditor'
 import "./playground.css"
 const Playground = () => {
+  const [code, setCode] = useState('');
+  const [code2,setcode2]=useState('')
   return (
     <>  
          <div className="box-btns">
@@ -19,6 +22,23 @@ const Playground = () => {
                 <div className="btn-verify btns-opers"><h3>Verify</h3></div>
                 <div className="btn-show btns-opers"><h3>Show proof</h3></div>
             </div>
+            <div className="con-editors">
+              <div className="box-editor">
+                <h4>INPUTS</h4>
+                <div className="cover-editor">
+
+                <CodeEditor code={code} setCode={(data)=>setCode(data)} theme="dracula" key="1"/>
+                </div>
+              </div>
+              <div className="box-editor">
+                <h4>OUTPUTS</h4>
+                <div className="cover-editor">
+
+                <CodeEditor code={code2} setCode={(data)=>setcode2(data)} theme="neat" key="2"/>
+                </div>
+              </div>
+            </div>
+            
     </>
   )
 }

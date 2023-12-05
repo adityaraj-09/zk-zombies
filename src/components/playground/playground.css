@@ -29,3 +29,16 @@ select:focus{
     color: white;
     background-color: rgb(115, 0, 255);
 }
+.con-editors{
+    display: grid;
+    gap: 30px;
+
+    grid-template-columns: 1fr 1fr;
+}
+.cover-editor{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
